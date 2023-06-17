@@ -20,3 +20,36 @@ public:
         return ans;
     }
 };
+
+
+// GFG
+//User function template for C++
+class Solution{
+public:
+
+	void rearrange(int arr[], int n) {
+	    // code here
+	    int pos=0;
+	    int neg=1;
+	    int ans[n];
+	    for(int i=0;i<n;i++)
+	    {
+	        if(arr[i]>=0)
+	        {
+	            ans[pos]=arr[i];
+	            pos+=2;
+	            
+	        }
+	        else
+	        {
+	            ans[neg]=arr[i];
+	            neg+=2;
+	        }
+	    }
+	    
+	    for(int i=0;i<n;i++)
+	    {
+	        arr[i]==ans[i];
+	    }
+	}
+};
