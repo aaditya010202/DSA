@@ -1,4 +1,3 @@
-// leetcode
 class Solution {
 public:
     int singleNonDuplicate(vector<int>& nums) {
@@ -24,6 +23,8 @@ public:
 
 
         // OPTIMAL SOLUTION
+        // index is (even,odd) then the element is present on the right side
+        // if (odd, even ) then the element is present on the left side
         int n=nums.size();
         int low=1;
         int high=n-2;
