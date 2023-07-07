@@ -1,4 +1,3 @@
-// GFG
 //{ Driver Code Starts
 #include <stdio.h>
 #include <stdlib.h>
@@ -52,8 +51,8 @@ class Solution
       {
           temp=temp->next;
       }
-      
-      temp->prev->next=temp->next;
+      if(temp->next) temp->next->prev=temp->prev;
+      if(temp->prev) temp->prev->next=temp->next;
       return head_ref;
     }
 };
