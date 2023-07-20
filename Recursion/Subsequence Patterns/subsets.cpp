@@ -1,24 +1,26 @@
-// leetcode
 class Solution {
 
     private: 
-
-    void subsets(vector<int>& nums, int i, vector<int>& sub, vector<vector<int>>& subs) {
-        subs.push_back(sub);
-        for (int j = i; j < nums.size(); j++) {
-            sub.push_back(nums[j]);
-            subsets(nums, j + 1, sub, subs);
-            sub.pop_back();
+    void solve(int n,int index, vector<vector<int>> &ans,vector<int> &nums, vector<int> &s)
+    {
+        if(index==n)
+        {
+            ans.push_back(s);
+            return ;
         }
+
+        s.push_back(nums[index]);
+        solve(n,index+1,ans,nums,s);
+        s.pop_back();
+        solve(n,index+1,ans,nums,s);
     }
 public:
     vector<vector<int>> subsets(vector<int>& nums) {
         // RECURSIVE
-
-        vector<vector<int>> subs;
-        vector<int> sub;
-        subsets(nums, 0, sub, subs);
-        return subs;
+        vector<vector<int>> ans;
+        vector<int> s;
+        solve(nums.size(),0,ans,nums,s);
+        return ans;
 
         // ITERATIVE
         // int n=nums.size();
