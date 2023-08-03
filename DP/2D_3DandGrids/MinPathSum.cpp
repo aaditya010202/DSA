@@ -1,25 +1,5 @@
 // leetcode
 class Solution {
-
-
-//     private:
-//     int f(vector<vector<int>>& grid, int i, int j)
-//     {
-//         if(i==0&&j==0) return grid[i][j];
-//         if(i<0||j<0) return INT_MAX;
-
-//         int left=grid[i][j]+f(grid,i,j-1);
-//         int up=grid[i][j]+f(grid,i-1,j);
-
-//         return min(left,up);
-//     }
-// public:
-//     int minPathSum(vector<vector<int>>& grid) {
-//         return f(grid,grid[0].size()-1,grid.size()-1);
-//     }
-
-
-// NEW
 //RECURSION
 // private:
 //     int solve(vector<vector<int>> &grid, int row, int col)
