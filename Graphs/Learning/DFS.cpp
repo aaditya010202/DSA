@@ -45,3 +45,33 @@ vector<vector<int>> depthFirstSearch(int V, int E, vector<vector<int>> &edges)
     }
     return dfs;
 }
+
+
+// GFG
+// class Solution {
+//     private:
+//     void solve(int node, vector<int> adj[], vector<int> &dfs, vector<bool> &vis)
+//     {
+//         vis[node]=1;
+//         dfs.push_back(node);
+//         for(auto x: adj[node])
+//         {
+//             if(!vis[x])
+//             {
+//                 solve(x,adj,dfs,vis);
+//             }
+//         }
+//     }
+//   public:
+//     // Function to return a list containing the DFS traversal of the graph.
+//     vector<int> dfsOfGraph(int V, vector<int> adj[]) {
+//         // Code here
+    
+//         vector<bool> vis(V,0);
+//         vector<int> dfs;
+        
+//         solve(0,adj,dfs,vis);
+//         return dfs;
+        
+//     }
+// };
