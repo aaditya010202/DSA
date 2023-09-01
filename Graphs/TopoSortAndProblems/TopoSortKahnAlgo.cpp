@@ -19,17 +19,15 @@ vector<int> topologicalSort(vector<vector<int>> &graph, int edges, int nodes) {
         }
     }
 
-    vector<int> vis(nodes,0);
     while(!q.empty())
     {
         int front=q.front();
-        vis[front]=1;
         ans.push_back(front);
         q.pop();
         for(auto x: arr[front])
         {
             indegree[x]--;
-            if(!vis[x] && indegree[x]==0)
+            if(indegree[x]==0)
             {
                 q.push(x);
             }
