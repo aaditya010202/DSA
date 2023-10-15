@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/aadib/Desktop/projects/DSA/DP/subsequence",
-      "program": "c:/Users/aadib/Desktop/projects/DSA/DP/subsequence/build/Debug/outDebug",
+      "cwd": "c:/Users/aadib/Desktop/projects/DSA/DP/strings",
+      "program": "c:/Users/aadib/Desktop/projects/DSA/DP/strings/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
