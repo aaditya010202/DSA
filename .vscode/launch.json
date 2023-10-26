@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/aadib/Desktop/projects/DSA/DP/strings",
-      "program": "c:/Users/aadib/Desktop/projects/DSA/DP/strings/build/Debug/outDebug",
+      "cwd": "c:/Users/aadib/Desktop/projects/DSA/DP/stocks",
+      "program": "c:/Users/aadib/Desktop/projects/DSA/DP/stocks/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
